@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapitre 03</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    <section>
+        <h1>CHAPITRE 03 : Le Modèle OSI</h1> 
+        <p>
+<span>1. Les Composants matériel d’un Réseau informatique</span>
+<br>
+Les cartes réseau, également appelées cartes d'interface réseau (NIC), permettent à un ordinateur de se connecter à un réseau, qu'il s'agisse d'Internet ou d'un réseau local. Elles sont installées à l'intérieur de l'ordinateur et sont généralement connectées à une prise Ethernet ou Wi-Fi. Les cartes réseau facilitent la transmission et la réception de données en utilisant des protocoles de communication tels que TCP/IP. <br>
+Les switches, ou commutateurs réseau, sont des composants matériels utilisés pour connecter différents appareils sur un réseau local (LAN). Les switches permettent à des appareils tels que des ordinateurs, des imprimantes et des serveurs de communiquer entre eux en utilisant des adresses MAC. Lorsqu'un appareil se connecte au switch, celui-ci enregistre son adresse MAC dans une table de correspondance. Ainsi, lorsque d'autres appareils souhaitent communiquer avec cet appareil, le switch utilise cette table pour envoyer les données uniquement à l'appareil destinataire, évitant ainsi de les diffuser à tous les appareils du réseau. Les switches sont disponibles en différentes tailles et peuvent offrir des fonctionnalités avancées telles que la gestion des VLAN, la qualité de service (QoS) et la gestion du trafic. <br>
+Le hub (ou concentrateur) est un composant matériel utilisé pour connecter plusieurs appareils sur un réseau local (LAN). Il fonctionne comme un répéteur en transmettant les données reçues à tous les appareils connectés, sans distinction de l'appareil destinataire. Contrairement au switch qui envoie les données uniquement à l'appareil concerné en utilisant une table de correspondance. Les switches sont généralement préférés car ils offrent une meilleure gestion du trafic et permettent une communication plus rapide et sécurisée entre les appareils connectés. Cependant, les hubs peuvent encore être utilisés dans des cas spécifiques ou dans de petits réseaux où la simplicité du hub est suffisante. <br>
+<span>2. Le modèle OSI (Open Systems Interconnection) :</span> <br>
+est un modèle de référence qui divise les communications en réseau en sept couches distinctes. Chaque couche est responsable de fonctions spécifiques liées à la communication des données entre les appareils. Les sept couches du modèle OSI sont la couche physique, la couche liaison de données, la couche réseau, la couche transport, la couche session, la couche présentation et la couche application. Le modèle OSI est souvent utilisé comme référence pour la conception et la mise en œuvre de réseaux informatiques. Bien qu'il ne soit pas utilisé dans les protocoles de communication modernes tels que TCP/IP, il reste utile pour comprendre les principes fondamentaux de la communication en réseau. <br>
+<span>3. Le modèle TCP/IP (Transmission Control Protocol/Internet Protocol) :</span> <br>
+est un modèle de référence utilisé pour la conception et la mise en œuvre des réseaux informatiques modernes. Il se compose de quatre couches principales : la couche liaison de données, la couche réseau, la couche transport et la couche application.
+Le modèle TCP/IP est largement utilisé dans les protocoles de communication tels que IP, TCP et UDP. Il est utilisé dans la conception et la mise en œuvre des réseaux d'entreprise, des réseaux Internet et des réseaux sans fil. Il sert de base pour la connectivité et la communication au sein des réseaux informatiques modernes
+<br>
+4. L’adressage dans les réseaux informatiques permet d'identifier de manière unique les unités en communication. Dans le contexte des adresses IP, il existe deux modes d'adressage : IPv4 et IPv6.
+<br>
+IPv4 est composé de 32 bits et est représenté en décimal par quatre octets séparés par des points. Il comprend une partie réseau et une partie hôte. Il  s’effectué selon différents types :  Les adresses réseau ont tous les bits de la partie hôte à zéro et les adresses de diffusion ont tous les bits de la partie hôte à un . Les adresses d'hôtes sont attribuées entre l'adresse réseau et l'adresse de diffusion. Le masque de réseau et de sous-réseaux est utilisé pour définir la partie réseau d'une adresse IP. Il consiste en une série de bits à 1 suivis de bits à 0. <br>
+IPv6 utilise une représentation de 128 bits et est divisé en huit mots de 16 bits séparés par des deux-points. Il offre un espace d'adressage beaucoup plus large que IPv4. <br>
+L'adressage IP est essentiel pour l'identification et la communication des ordinateurs dans un réseau. Il permet de router les données de manière précise et de gérer la connectivité entre les appareils.
+<br>
+
+
+        </p>
+    </section>
+</body>
+</html>

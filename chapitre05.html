@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapitre 05</title>
+    <link rel="stylesheet" href="./style2.css">
+</head>
+<body>
+    <section>
+        <h1>Chapitre 05</h1>
+        <p>
+<span>Système de gestion de version</span> <br>
+<span>Introduction</span><br>
+Dans ce chapitre nous allons définir ce que sont Git et Github. <br>
+
+<span>1. Qu’est-ce que Git</span> <br>
+Git est un logiciel de versioning créé en 2005 par Linus Torvalds, le créateur de Linux. Git permet de conserver un historique des modifications effectuées sur un projet afin of pouvoir identifier les changements effectués.
+<br>
+<span>2. A quoi sert concrètement un système de gestion de version</span> <br>
+Le système de gestion de version il permet de faciliter la collaboration entre plusieurs développeurs travaillant sur un même projet. Il présente également les fonctionnalités offertes par Git, un logiciel de versioning populaire, pour la gestion de projet collaboratif.
+<br>
+<span>3.Les modèles des logiciels de gestion de version :</span><br>
+Modèle centralisé VS modèle décentralisé
+Les deux modèles des logiciels de gestion de version sont aujourd’hui tous construits sur l’un. Le modèle centralisé ou le modèel décentralisé appelé appels appelée.
+<br>
+<span>4.Qu’est-ce que Github</span><br>
+GitHub est un service en ligne qui permet d’héberger des dépôts ou repo Git. C’est le plus grand hébergeur de déPôts Git du monde. Git est un logiciel de gestion de version.
+<br>
+<span>5.utiliser Git:ligne de commande,console et interface graphique</span> <br>
+GitHub est un service en ligne qui permet d’héberger des dépôts ou repo Git. C’est le plus grand hébergeur de déPôts Git du monde. Git est un logiciel de gestion de version.
+<br>
+<span>6.Installation de Git</span><br>
+La façon la plus simple d’installer Git est de télécharger la dernière version sur le site
+officiel d’ouvrir le fichier téléchargé et de suivre les
+instructions à l’écran en laissant toutes les valeurs par défaut.
+<br>
+<span>7.Paramétrage de Git</span><br>
+Pour paramétrer Git en renseignant un nom d'utilisateur et une adresse mail via la commande git config. L'option --global permet de les utiliser globalement pour tous les projets Git. Des commandes précises sont fournies pour renseigner ces informations. Enfin, il est conseillé de vérifier que les informations ont bien été enregistrées en tapant les commandes git config user.name et git config user.email.
+<br>
+<span>8.Démarrer un dépôt Git</span><br>
+Pour la création d un dépôt Git on peut importer un répertoire déjà existe dans Git ou cloner un dépôt Git déjà existant.
+<br>
+<span>9. La gestion des informations selon Git</span> <br>
+
+Git gère les données en prenant des instantanés du contenu de l'espace de travail lorsqu'un projet est enregistré. Ces instantanés sont stockés localement dans une base de données, ce qui permet la réalisation de la plupart des opérations localement sans connexion à un serveur central distant. Cette approche permet des opérations plus rapides et un travail plus agréable.
+<br>
+<span>10.Les états des fichiers</span> <br>
+Git, un système de contrôle de version pour suivre les modifications apportées aux fichiers d'un projet. Il explique les deux états de suivi et de non suivi, ainsi que les différents états d'un fichier suivi : modifié, indexé ou validé. Il décrit également le processus de stockage des fichiers en base et de la prise d'instantanés pour enregistrer l'état des fichiers à un moment donné.
+<br>
+<span>11. Les zones de travail:</span> <br>
+  Les états de fichiers sont liés à des zones de travail dans Git.
+En fonction de son état, un fichier va pouvoir apparaitre dans telle zone de travail.
+Le répertoire Git est l’endroit où Git stocke les méta-données et la base de données des objets de votre projet.
+Tant qu’un fichier n’est pas indexé, il possède l’état modifié ou est non suivi si c’est un nouveau fichier.
+Finalement, on va valider (“commit”) la version indexée de nos fichiers pour les ajouter au répertoire Git.
+<br>
+<span>12. Créer un dépôt Git à partir d’un répertoire existant:</span> <br>
+  Lorsqu’on démarre avec Git, on a souvent déjà des projets en cours stockés localement sur notre machine
+ou sur serveur distant et pour lesquels on aimerait implémenter un système de gestion de version.
+Pour la suite ,créer un répertoire “projet-git” qui se trouve sur le bureau et qui contient
+deux fichiers texte vides “fichier1.txt” et “README.txt”.
+Lorsqu’on utilise git init,il renvoie un message en nous informant que le dépôt Git a bien été initialisé et qu’il est vide.
+Il nous dit aussi qu’aucun fichier n’a été validé en base pour le moment ni ajouté pour validation.
+Pour les valider et les ajouter en base, on utilise la commande git commit.
+Bien documenter chaque commit permet aux auteurs et aux contributeurs à un projet de rapidement comprendre les modifications et de pouvoir les valider.
+<br>
+<span>12. Créer un dépôt Git à partir d’un répertoire existant:</span> <br>
+  La deuxième façon de démarrer un dépôt Git est de cloner localement un dépôt Git déjà existant.
+Pour cela, on utilise la commande Git clone.
+Créez un repo sur GitHub: Maintenant, apres avoir créer votre repo sur GitHub.
+Nous pouvons maintenant transmettre nos fichiers à ce repo.
+git branch -M main git remote add origin https://github.com/BouchekirRedouane/ExmpleCloneGit.git git push -u origin main.
+<br>
+<span>14. Ajouter ou modifier des fichiers dans un projet et actualiser notre dépôt Git:</span> <br>
+  A ce niveau, nous avons notre projet contenant un ensemble de fichiers et de ressources sur lesquelles on travaille,
+ainsi qu’un dépôt Git qui sert à gérer les différentes versions de notre projet.
+En continuant à travailler sur notre projet, nous allons être amenés à ajouter, modifier, voire supprimer des fichiers.
+On va indiquer tous ces changements à Git pour qu’il conserve un historique des versions auquel on pourra ensuite accéder pour revenir à un état précédent,chaque fois qu’on souhaite enregistrer une modification de fichier ou un ajout de fichier dans le dépôt Git,
+on va devoir utiliser les commandes git add et git commit .le commit d’un fichier se basera sur l’état de ce fichier au moment du git add,pour enregistrer toujours
+la dernière version d’un fichier, il faudra effectuer un git add juste avant un git commit,Cela dispense d’avoir à taper git add.
+<br>
+<span>15. Consulter l’historique des modifications Git:</span> <br>
+  La manière la plus simple de consulter l’historique des modifications Git est d’utiliser la commande git log,elle affiche la liste des commits réalisés du plus
+récent au plus ancien et chaque commit est affiché avec sa somme de contrôle SHA-1, le nom et l’e-mail de l’auteur, la date et le message du commit.
+<br>
+<span>16. Annuler des modifications apportées à un fichier:</span><br>
+  L’un des principaux intérêts d’utiliser un logiciel de gestion de vision est de pouvoir “roll back”, pouvoir revenir à un état antérieur enregistré d’un projet.
+Après un commit, on continue à travailler sur nos fichiers et à les modifier.
+certaines modifications ne vont pas apporter les comportements espérés et on voudra revenir à l’état du fichier du dernier instantané Git .
+<br>
+<span>17.Qu'est ce qu'une branche?:</span><br>
+  Créer une branche, c’est comme créer une “copie” de votre projet pour développer et tester de nouvelles fonctionnalités sans impacter le projet de base.
+Pour rappel, lorsqu’on effectue un commit, Git stocke en fait un objet commit qui contient les nom et prénom de l’auteur du commit, le message renseigné
+lors de la création du commit ainsi qu’un pointeur vers l’instantané du contenu indexé et des pointeurs vers le ou les commits précédant directement le commit courant.
+On peut utiliser le pointeur pour accéder à la donné en question.La branche par défaut dans Git s’appelle master.
+Cette branche master va se déplacer automatiquement à chaque nouveau commit pour pointer sur le dernier commit effectué tant qu’on
+<br>
+        </p>
+    </section>
+    
+</body>
+</html>
